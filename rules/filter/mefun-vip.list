@@ -1,0 +1,13 @@
+# > MeFan-VIP Emby分流规则
+# 智能接入点
+HOST,sptv.ii00.cc,direct
+# 海外用户
+HOST,wptv.ii00.cc,MeFan-VIP
+# 大陆优化（备用）
+IP-CIDR,98.126.27.164/24,direct
+# 大陆优化（实验）
+IP-CIDR,210.51.27.46/24,direct
+
+# > 音乐服
+HOST,cn-music.mefun.vip,direct
+HOST,music.mefun.vip,direct
