@@ -1,4 +1,4 @@
 # > MeFan-VIP Emby分流规则
 # 海外用户
-HOST,wptv.ii00.cc,MeFan-VIP
-HOST,music.mefun.vip,MeFan-VIP
+HOST,wptv.ii00.cc
+HOST,music.mefun.vip
