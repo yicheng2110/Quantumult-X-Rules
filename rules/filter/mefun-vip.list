@@ -10,4 +10,4 @@ IP-CIDR,210.51.27.46/24,direct
 
 # > 音乐服
 HOST,cn-music.mefun.vip,direct
-HOST,music.mefun.vip,direct
+HOST,music.mefun.vip,MeFan-VIP
