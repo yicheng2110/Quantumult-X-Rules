@@ -21,8 +21,9 @@ proxies:
 
 rules:
   # 精确域名匹配
-  # - DOMAIN,ip.sb,local-s5
-  - RULE-SET,proxy,local-s5
+  - DOMAIN,ip.sb,local-s5
+  - DOMAIN,ipip.net,local-s5
+  # - RULE-SET,proxy,local-s5
   # 后缀域名匹配（包含所有子域名）
   # - DOMAIN-SUFFIX,google.com,本地SOCKS5
 
