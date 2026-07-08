@@ -33,7 +33,7 @@ rule-providers:
   proxy:
     type: http
     behavior: classical
-    url: 
+    url: https://github.com/yicheng2110/Quantumult-X-Rules/raw/refs/heads/main/proxy.txt
     interval: 3600
     format: text
 
