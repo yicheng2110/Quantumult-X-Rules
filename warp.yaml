@@ -1,1 +1,30 @@
+tun:
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
 
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+
+proxies:
+  - name: "local-s5"
+    type: socks5
+    server: 127.0.0.1
+    port: 39999
+
+rules:
+  # 精确域名匹配
+  - DOMAIN,ip.sb,local-s5
+
+  # 后缀域名匹配（包含所有子域名）
+  # - DOMAIN-SUFFIX,google.com,本地SOCKS5
+
+  # 兜底规则：以上都没命中的，全部走 DIRECT（直连）
+  - MATCH,DIRECT
