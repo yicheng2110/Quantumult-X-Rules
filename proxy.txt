@@ -1,0 +1,2 @@
+DOMAIN,ip.sb
+DOMAIN.ipip.net
