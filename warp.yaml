@@ -22,9 +22,18 @@ proxies:
 rules:
   # 精确域名匹配
   - DOMAIN,ip.sb,local-s5
-
+  - RULE-SET,proxy,local-s5
   # 后缀域名匹配（包含所有子域名）
   # - DOMAIN-SUFFIX,google.com,本地SOCKS5
 
   # 兜底规则：以上都没命中的，全部走 DIRECT（直连）
   - MATCH,DIRECT
+
+rule-providers:
+  proxy:
+    type: http
+    behavior: classical
+    url: 
+    interval: 3600
+    format: text
+
